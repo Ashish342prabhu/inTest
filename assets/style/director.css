@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.directors-img{
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
+    background-image: url('/assets/img/img3.jpg');
+    margin-bottom: 200px;
+
+}
+
+.director-contents-back{
+    height: 400px;
+    width: 500px;
+    position:absolute;
+    left: 100px;
+   
+    top: 430px;
+    background-color: rgb(5, 10, 61);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+   padding-left: 100px;
+    flex-direction: column;
+}
+.director-contents-back h1{
+    color:white;
+    font-size: 40px;
+}
+.director-contents-back p{
+font-size:22px;
+color: whitesmoke;
+}
+
+
+.director-message{
+   
+    height: 20vh;
+    width: 100%;
+ 
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    padding-left: 50px;
+    
+}
+.director-card-container{
+    min-height: 120vh;
+    width: 100%;
+   
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.director-card{
+    height: 430px;
+    width: 320px;
+   background: linear-gradient(to bottom,#ECC26B,rgb(242, 189, 89),white,white,white);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    box-shadow: 2px 2px 3px gray;
+    transition: 1s ease-in;
+}
+
+.directors-image{
+    
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    border: 8px solid black;
+    margin-top: 50px;
+}
+.g1 {
+    background-image: url('/assets/img/ragha.jpg');
+}
+.g2 {
+    background-image: url('/assets/img/srinivas.jpg');
+}
+.g3 {
+    background-image: url('/assets/img/vijaylakshmi.jpg');
+}
+.g4 {
+    background-image: url('/assets/img/mitra.jpg');
+}
+.g5 {
+    background-image: url('/assets/img/VC.png');
+}
+.g6 {
+    background-image: url('/assets/img/anil.jpg');
+}
+.g7 {
+    background-image: url('/assets/img/ajay.jpg');
+}
+.g8 {
+    background-image: url('/assets/img/thomas.jpg');
+}
+.g9 {
+    background-image: url('/assets/img/naveen.jpg');
+}
+.directors-name{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.directors-name h1{
+    font-size: 20px;
+    font-weight: 450px;
+    color: brown;
+}
+.directors-name p{
+    font-size: 19px;
+    font-weight: 550;
+    margin: 10px;
+}
+.director-line{
+    height: 3px;
+    width: 200px;
+    background-color: brown;
+}
+.director-button{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.director-button button{
+    height: 38px;
+    width: 120px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 10px;
+    font-size: 15px;
+    color: purple;
+}
+.director-button button:hover{
+    background-color: orange;
+}
+
+@media screen and (max-width:1028px){
+    .director-contents-back{
+        height: 300px;
+        width: 460px;
+        left: 100px;
+        top: 480px;
+    }
+    .director-contents-back h1{
+        font-size: 34px;
+    }
+    .director-contents-back p{
+    font-size:20px;
+    }
+    
+    
+    .director-message{
+       
+        height: 20vh;
+        width: 100%;
+        font-size: 35px;
+        padding-left: 50px;
+        
+    }
+}
+@media screen and (max-width:750px){
+    .director-contents-back{
+        height: 250px;
+        width: 390px;
+        left: 20px;
+        top: 500px;
+        
+    }
+    .director-contents-back h1{
+        font-size: 34px;
+    }
+    .director-contents-back p{
+    font-size:15px;
+    }
+    
+    
+    .director-message{
+       
+        height: 20vh;
+        width: 100%;
+        font-size: 35px;
+        padding-left: 50px;
+        
+    }
+}
+@media screen and (max-width:550px){
+
+    .directors-img{
+        
+       
+        margin-bottom: 150px;
+    
+    }
+
+    .director-contents-back{
+        height: 200px;
+        width: 340px;
+        left: 10px;
+        top: 550px;
+        
+    }
+    .director-contents-back h1{
+        font-size: 30px;
+    }
+    .director-contents-back p{
+    font-size:12px;
+    }
+    
+    
+    .director-message{
+       
+        height: 20vh;
+        width: 100%;
+        font-size: 30px;
+        padding-left: 20px;
+        
+    }
+
+    
+.director-card-container{
+    padding: 5px;
+}
+.director-card{
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+}
+
+
+.directors-image{
+    
+    height: 140px;
+    width: 140px;
+    border: 5px solid black;
+}
+.directors-name{
+    margin: 15px;
+}
+
+
+
+
+}
+
+@media screen and (max-width:390px){
+    .directors-img{
+        
+       
+        margin-bottom: 150px;
+    
+    }
+
+    .director-contents-back{
+        height: 200px;
+        width: 340px;
+        left: 10px;
+        top: 550px;
+        
+    }
+    .director-contents-back h1{
+        font-size: 30px;
+    }
+    .director-contents-back p{
+        font-size:10px;
+        }
+    
+    
+    .director-message{
+       
+        height: 20vh;
+        width: 100%;
+        font-size: 30px;
+        padding-left: 20px;
+        
+    }
+
+    
+.director-card-container{
+    padding: 5px;
+}
+.director-card{
+    height: 360px;
+    width: 270px;
+    margin: 10px;
+}
+
+
+.directors-image{
+    
+    height: 110px;
+    width: 110px;
+    border: 5px solid black;
+}
+.directors-name{
+    margin: 15px;
+}
+.directors-name h1{
+    font-size: 25px;
+}
+.directors-name p{
+    font-size: 18px;
+}
+
+.director-line{
+    width: 150px;
+}
+.director-button{
+    height: 40px;
+    width: 130px;
+    font-size: 12px;
+}
+
+.director-card:hover{
+  
+    height: 380px;
+    width: 290px;
+    box-shadow: 4px 4px 6px gray;
+}
+
+.directors-img{     
+    margin-bottom: 120px;
+}
+
+.director-contents-back{
+    height: 170px;
+    width: 270px;
+    left: 10px;
+    top: 550px;
+    padding-left: 30px;
+}
+.director-contents-back h1{
+    font-size: 30px;
+}
+.director-contents-back p{
+font-size:15px;
+}
+.director-message{
+       
+    height: 20vh;
+    width: 100%;
+    font-size: 24px;
+    padding-left: 10px;
+    
+}
+
+}

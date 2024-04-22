@@ -1,0 +1,461 @@
+.about-img-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 90vh;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.about-img-container img{
+    height: 90vh;
+    width: 100%;
+}
+.shape-img{
+
+    height: 400px;
+    width: 650px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 400px;
+    left: 25px;
+    z-index: 1;
+   /* background-color: black; */
+    background-image: url("/assets/img/vector1.png");
+    filter: drop-shadow(1px 1px 5px rgb(18, 17, 17,0.5));
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape-img-content h1{
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+}
+
+
+.aboutcards-container{
+    
+    min-height: 180vh;
+    width: 100%;
+    background-image: url("img/backwhite.jpg");
+    padding: 60px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aboutcards-container .abt-cards{
+    margin-top: 40px;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    
+    background-color: rgb(255, 255, 255);
+    min-height: 71vh;
+    width:93% ;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(18, 17, 17,0.5);
+    display: flex;
+    
+    justify-content: space-between;
+
+}
+.abtcard-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    
+
+/* float: right; */
+height: 70%;
+width: 60%;
+}
+.abtcard-content h1{
+   
+    color: rgb(14, 14, 102);
+    text-wrap: balance;
+    font-size: 30px;
+}
+.abtcard-content p{
+    text-wrap: balance;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.about-card-img2,.about-card-img{
+   
+    max-height: 36%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-img-container h1{
+    display: none;
+}
+.aboutcards-container .abt-cards .about-card-img img{
+    flex-wrap: wrap;
+    max-height: 350px;
+    width: 250px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 9px black;
+   
+}
+.aboutcards-container .abt-cards .about-card-img img:hover{
+    box-shadow: 3px 3px 10px black;
+    filter: contrast(1.5);
+}
+.aboutcards-container .abt-cards .about-card-img2 img{
+  
+    max-height: 350px;
+    width: 250px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 9px black;
+}
+.aboutcards-container .abt-cards .about-card-img2 img:hover{
+    box-shadow: 3px 3px 10px black;
+    filter: contrast(1.5);
+}
+@media screen and (max-width: 1280px ){
+    .shape-img{
+
+        height: 400px;
+        width: 500px;
+        position: absolute;
+       
+        top: 320px;
+        left: 25px;
+        z-index: 1;
+ 
+     
+    }
+    .shape-img-content h1{
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 900px ) {
+
+
+    .shape-img{
+
+        height: 350px;
+        width: 600px;
+        position: absolute;
+       
+        top: 370px;
+        left: 25px;
+        z-index: 1;
+ 
+     
+    }
+    .shape-img-content h1{
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+    }
+    .about-img-container{
+       
+        min-height: 75vh;
+        width: 100%;
+        margin-bottom: 110px;
+    }
+    .about-img-container img{
+        min-height: 75vh;
+        width: 100%;
+    }
+
+    
+.aboutcards-container{
+    
+    min-height: 150vh;
+    width: 100%;
+    background-image: url("img/backwhite.jpg");
+    padding: 10px;
+    padding-top: 0px;
+    
+}
+
+.aboutcards-container .abt-cards{
+    padding: 40px;
+    
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    min-height: 50vh;
+    width:95% ;
+   
+}
+.abtcard-content h1{
+    font-size: 25px;
+}
+.abtcard-content p{
+    
+    margin-top: 30px;
+    font-size: 16px;
+}
+.aboutcards-container .abt-cards .about-card-img img{
+  
+    height: 250px;
+    width: 220px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 9px black;
+    /* float: left; */
+}
+.aboutcards-container .abt-cards .about-card-img2 img{
+    /* float: right; */
+    height: 250px;
+    width: 220px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 9px black;
+}
+}
+
+@media screen and (max-width: 650px ){
+
+    .about-img-container img{
+        display: none;
+        height: 95vh;
+        width: 100%;
+    }
+    .shape-img{
+        display: none;
+        height: 220px;
+        width: 300px;
+        position: absolute;
+       
+        top: 390px;
+        left: 25px;
+        z-index: 1;
+       /* background-color: black; */
+     
+    }
+    .about-img-container{
+        
+        height: 95vh;
+         width: 100%;
+         padding-bottom: 0;
+         margin-bottom: 0px;
+     background-color: rgb(5, 5, 69);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+     }
+    .shape-img-content{
+        position: absolute;
+        left: 100px;
+    }
+    .shape-img-content h1{
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+    }
+    .about-img-container{
+       
+        min-height: 55vh;
+        width: 100%;
+        margin-bottom: 110px;
+    }
+    .about-img-container h1{
+  display: block;
+  font-size: 50px;
+  color: white;
+  margin-top: 50px;
+  filter: drop-shadow(1px 1px 3px whitesmoke) 
+    }
+    
+
+    
+.aboutcards-container{
+    
+    min-height: 120vh;
+    width: 100%;
+    background-image: url("img/backwhite.jpg");
+    padding: 10px;
+    padding-top: 0px;
+    
+}
+
+.aboutcards-container .abt-cards{
+    padding: 30px;
+    
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    min-height: 40vh;
+    width:95% ;
+   
+}
+.abtcard-content h1{
+    font-size: 17px;
+    text-wrap: wrap;
+}
+.abtcard-content p{
+    
+    margin-top: 20px;
+    font-size: 12px;
+}
+.aboutcards-container .abt-cards .about-card-img img{
+  
+    height: 200px;
+    width: 200px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 9px black;
+    /* float: left; */
+}
+.aboutcards-container .abt-cards .about-card-img2 img{
+    /* float: right; */
+    height: 200px;
+    width: 200px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 9px black;
+}
+}
+@media screen and (max-width: 590px ){
+    
+    .aboutcards-container{
+    
+        min-height: 160vh;
+        width: 100%;
+        background-image: url("img/backwhite.jpg");
+        padding: 10px;
+        padding-top: 0px;
+        
+    }
+    
+    .aboutcards-container .abt-cards{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: row;
+       
+    }
+    .abtcard-content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        flex-wrap: wrap;
+        
+    
+    /* float: right; */
+    height: 70%;
+    width: 100%;
+    }
+    .about-card-img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .aboutcards-container .abt-cards .about-card-img img{
+  
+        height: 200px;
+        width: 300px;
+        border-radius: 14px;
+        box-shadow: 2px 2px 9px black;
+        /* float: left; */
+    }
+    .aboutcards-container .abt-cards .about-card-img2 img{
+        /* float: right; */
+        height: 200px;
+        width: 300px;
+        border-radius: 13px;
+        box-shadow: 2px 2px 9px black;
+    }
+    .about-card-img2{
+        width: 300px;
+        margin-top: 20px;
+    }
+    
+}
+@media screen and (max-width: 470px ){
+    .about-img-container{
+        
+       height: 95vh;
+        width: 100%;
+        
+    background-color: rgb(5, 5, 69);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+    .about-img-container img{
+        display: none;
+        height: 95vh;
+        width: 100%;
+    }
+    .shape-img{
+        display: none;
+        height: 220px;
+        width: 300px;
+        position: absolute;
+       
+        top: 390px;
+        left: 25px;
+        z-index: 1;
+       /* background-color: black; */
+     
+    }
+    
+}
+
+@media screen and (max-width: 380px ){
+    
+    
+    
+
+
+   
+    .aboutcards-container .abt-cards .about-card-img img{
+  
+        height: 150px;
+        width: 250px;
+        border-radius: 14px;
+        box-shadow: 2px 2px 9px black;
+        /* float: left; */
+    }
+    .aboutcards-container .abt-cards .about-card-img2 img{
+        /* float: right; */
+        height: 150px;
+        width: 250px;
+        border-radius: 13px;
+        box-shadow: 2px 2px 9px black;
+    }
+  
+}
+@media screen and (max-width: 320px ){
+    .aboutcards-container .abt-cards .about-card-img img{
+  
+        height: 150px;
+        width: 200px;
+        border-radius: 14px;
+        box-shadow: 2px 2px 9px black;
+        /* float: left; */
+    }
+    .aboutcards-container .abt-cards .about-card-img2 img{
+        /* float: right; */
+        height: 150px;
+        width: 200px;
+        border-radius: 13px;
+        box-shadow: 2px 2px 9px black;
+    }
+  
+}

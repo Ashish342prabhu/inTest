@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.innovation-img{
+  height: 100vh;
+    width: 100%;
+    background-image: url('/assets/img/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innovation-img h1{
+    color: rgb(241, 237, 237,0.9);
+    font-size: 60px;
+    
+}
+
+.innovation-title{
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.innovation-title h3{
+    font-size: 35px;
+}
+
+.incubatees-table{
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+}
+.incubatees-table table{
+    min-height: 100%;
+    margin: 4%;
+   width: 100%;
+}
+.incubatees-table table tr{
+    border: 1px solid black;
+}
+.incubatees-table table tr:nth-child(odd){
+background-color: rgb(115, 140, 152);
+}
+.incubatees-table table tr:nth-child(even){
+    background-color: rgb(223, 246, 254);
+    }
+.incubatees-table table tr th{
+    background-color: rgb(14, 34, 91);
+    color: white;
+}
+.incubatees-table table tr .table-space2{
+   padding: 14px;
+   min-width: 400px;
+   text-wrap: wrap;
+   text-align: center;
+}
+.incubatees-table table tr .table-space21{
+    padding: 30px;
+    
+    border: 1px solid black;
+ }
+.table-space{
+    min-width: 100px;
+    text-align: center;
+ }
+
+
+/*===================resonsive=====================*/
+
+ @media screen and (max-width:1300px){
+.incubatees-table table tr .table-space2{
+   padding: 14px;
+   min-width: 300px;
+}
+.incubatees-table table tr .table-space21{
+    padding: 30px;
+ }
+.table-space{
+    min-width: 90px;
+    text-align: center;
+ }
+ .incubatees-table{
+    height: 130vh;
+    margin-top: 100px;
+    
+
+}
+
+ }
+
+ @media screen and (max-width:1028px){
+    .incubatees-table table tr .table-space2{
+       padding: 14px;
+       min-width: 200px;
+       min-height: 100px;
+       text-wrap: wrap;
+    }
+    .incubatees-table table tr .table-space21{
+        padding: 30px;
+        min-height: 100px;
+        text-wrap: wrap;
+     }
+    .table-space{
+        min-width: 70px;
+        text-align: center;
+     }
+    
+     }
+
+     @media screen and (max-width:900px){
+
+        .incubatees-table{
+            min-height: 130vh;
+            width: 100%;
+        }
+        .incubatees-table table tr .table-space2{
+           padding: 7px;
+           min-width: 120px;
+        }
+        .incubatees-table table tr .table-space21{
+            padding: 15px;
+            
+            border: 1px solid black;
+         }
+         .innovation-title h3{
+            font-size: 30px;
+         }
+        .table-space{
+            min-width: 70px;
+            text-align: center;
+         }
+         tr th{
+            font-size: 13px;
+         }
+         tr td{
+            font-size: 11px;
+            font-weight: 600;
+         }
+        
+        
+     }
+
+     @media screen and (max-width:650px){
+        .incubatees-table{
+            overflow: scroll;
+            min-height: 180vh;
+        }.innovation-img h1{
+            
+            font-size: 30px;
+            
+        }
+     }

@@ -1,0 +1,1428 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"poppins" ,sans-serif;
+  text-decoration: none;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+/* .whole{
+  
+} */
+
+
+
+
+
+
+
+
+/*=======================slider============================*/
+.sliderwindow{
+  margin-bottom: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.sliderwindow{
+  height: 85vh;
+  width: 100%;
+}
+.banner1,.banner2,.banner3,.banner4{
+  height: 100vh;
+  width: 100%;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  
+}
+
+.ban img{
+  height: 140vh;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+  100%{
+width: 100%;
+  }
+}
+.slidertext{
+  width: 800px;
+  position: absolute;
+  top: 250px;
+  left: 110px; 
+  color:white;
+  animation: textup 12s linear infinite;
+  transform: translateY(100px);
+}
+
+@keyframes textup{
+  10%{
+      transform: translateY(0px);
+  }
+  100%{
+      transform: translateY(100px);
+  }
+}
+
+
+.textbox1{
+  animation-delay: 0s;
+}
+.textbox2{
+  animation-delay: 3s;
+}
+.textbox3{
+  animation-delay: 6s;
+}
+.textbox4{
+  animation-delay: 9s;
+}
+
+.slidertext h2{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.slidertext h1{
+  margin-top: 1px;
+  font-size: 40px;
+  font-weight: 900;
+}
+.slidertext p{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+.slidertext span{
+  background: red;
+  height: 2px;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  margin-top: 0;
+}
+
+/*===========button==========*/
+.slidertext .bannerbtn{
+  padding: 10px ;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 30px;
+  /* background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7); */
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  margin-top: 20px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  border: 3px solid white;
+ 
+}
+
+/* .slidertext .bannerbtn a img{
+  height: 20px;
+  width: 20px;
+} */
+.slidertext .bannerbtn a:hover{
+  font-weight: 700;
+  opacity: 1;
+  
+}
+.slidertext .bannerbtn:hover{
+ 
+ color: white;
+ background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+ border: none;
+  
+  /* box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+inset -4px -4px 6px 0 rgba(255,255,255,.2),
+inset 4px 4px 6px 0 rgba(0, 0, 0, .4); */
+box-shadow: 1px 1px 1px gray;
+opacity: 0.8;
+}
+
+.banner1{
+  animation: slide1 12s linear infinite;
+}
+.banner2{
+  animation: slide2 12s linear infinite;
+}
+.banner3{
+  animation: slide3 12s linear infinite;
+}
+.banner4{
+  animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1{
+  0%{
+      visibility: visible;
+  }
+  25%{
+      visibility: hidden;
+  }
+  50%{
+      visibility: visible;
+  }
+  75%{
+      visibility: hidden;
+  }
+  100%{
+      visibility: visible;
+  }
+} 
+@keyframes slide2{
+  0%{
+      visibility: hidden;
+  }
+  25%{
+      visibility: hidden;
+  }
+  50%{
+      visibility: visible;
+  }
+  75%{
+      visibility: hidden;
+  }
+  100%{
+      visibility: hidden;
+  }
+}
+@keyframes slide3{
+  0%{
+      visibility: hidden;
+  }
+  25%{
+      visibility: hidden;
+  }
+  50%{
+      visibility: hidden;
+  }
+  75%{
+      visibility: visible;
+  }
+  100%{
+      visibility: hidden;
+  }
+}
+@keyframes slide4{
+  0%{
+      visibility: hidden;
+  }
+  25%{
+      visibility: hidden;
+  }
+  50%{
+      visibility: hidden;
+  }
+  75%{
+      visibility: hidden;
+  }
+  100%{
+      visibility: visible;
+  }
+} 
+
+.slidertext .bannerbtn a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+
+}
+
+/* ========================================crads========================== */
+
+
+.maincardscontainer{
+    min-height: 90vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    
+}
+
+.cardsrow{
+    min-height: 40vh;
+    min-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+
+.cardsrow .cards{
+    height: 220px;
+    width: 300px;
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
+background-color: rgb(214, 209, 209);
+border-radius: 9px;
+background: #fffcfc;
+  box-shadow: 2px 2px 2px 1px #b1b1b1,
+  -0.2px -0.2px 7px rgb(171, 166, 166,0.4);
+    
+}
+
+.cardsrow .cards:hover{
+  box-shadow:  5px 5px 10px #b1b1b1,
+  -5px -5px 10px #ffffff;
+  background-color: rgb(8, 8, 93);
+  color: white;
+}
+
+.cardsrow .cards img{
+  height: 60px;
+  width: 60px;
+  padding-bottom: 12px;
+  
+    align-self: center;
+}
+.cardsrow .cards h2{
+  text-wrap: balance;
+  text-transform: uppercase;
+  font-weight: 800;
+    font-size: 1.3rem;
+    align-self: center;
+    margin-bottom: 3px;
+}
+.cardsrow .cards p{
+    font-size: .8rem;
+    text-wrap: balance;
+   margin-left: 50px;
+   margin-top: 5px;  
+}
+
+
+
+/* =====whyincub=========== */
+.whyincub{
+    min-height:50vh;
+    min-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.whycontent{
+    height: 90%;
+    width: 600px;
+    
+}
+.whycontent h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+.whycontent p{
+    font-size: 17px;
+}
+
+.whyincub img{
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    
+   
+}
+
+
+/*service-cards*/
+.servicecardheader{
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(169, 163, 155, 0.3);
+
+}
+.servicecardheader h1{
+  font-size: 30px;
+  margin-left: 10px;
+  padding-top: 30px;
+  font-weight: 700;
+  color: #15186E;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.servicecardheader h1::before{
+  display: inline-block;
+  content: '';
+  position:relative;
+  top: 20px;
+  left: 65px;
+  height: 5px;
+  width: 60px;
+border-radius: 20px;
+ 
+background-color: #50d8af;
+}
+
+/*=====================chancellor====================*/
+.chancellor{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('/assets/img/back1.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.chancellorinfo{
+    margin-top: 50px;
+    height: 80%;
+    min-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.chancellorinfo img{
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px  rgb(132, 126, 126);
+    animation: 7s updown infinite ;
+}
+@keyframes updown{
+    0%{
+        /* transform: translateY(0); */
+        transform: translateX(-100px);
+    }
+    50%{
+        transform: translateY(-50px);
+        
+    }
+    0%{
+        transform: translateY(0);
+    }
+}
+
+.chancellorbio{
+    height: 90%;
+    width: 600px;
+   
+}
+.chancellorbio .typingwrapper  h1{
+    font-weight: 900;
+    font-size: 40px;
+    color: rgb(36, 21, 101);
+    margin-bottom: 2px;
+}
+/*TYPING ANIMATION*/
+.typingwrapper{
+  height: 50px;
+  width: 100%;
+}
+
+
+.chancellorbio h4{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(159, 0, 187);
+    margin-bottom: 20px;
+}
+.chancellorbio p{
+    font-size: 18px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+
+/*typing-animation*/
+/* .chancellorbio .statictext{
+ 
+} */
+/* .animatetyping{
+  position: relative;
+}
+.chancellorbio .typeanimationcouncller::before{
+  content: '';
+  position: relative;
+  height: 30px;
+  width: 350px;
+   background-color: black;
+  animation: typing 4s steps(12) infinite;
+}
+@keyframes typing{
+  40%,60%{
+    left: 100%;
+  }
+  100%{
+      left: 0;
+  }
+
+} */
+
+
+/*============================SOL-PROB========================*/
+ .solprobmain{
+    min-height:90vh;
+    min-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sol-prob{
+    height: 100%;
+    width: 940px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.solprob{
+    height: 60vh;
+    width: 450px;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #224468;
+    color: white;
+    padding: 10px;
+    
+   
+}
+.solprob p{
+  font-size: 15px;
+   width: 340px;
+    padding: 0 20px 0 20px;
+}
+.solprob h2{
+  color: rgb(247, 242, 242);
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.solprob .btn-12{
+    padding: 7px 40px;
+   
+    margin-left: 20px;
+    border: none;
+    box-shadow: 1px 1px 1px gray;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+}
+.solprob .btn-12:hover{
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.544);
+  color: white;
+} 
+
+
+/*=============sponser=================*/
+
+
+.sponserslider{
+    min-height: 60vh;
+    /* background-color: rgba(98, 97, 99, 0.1); */
+    width: 100%;
+}
+.sponserslider h3{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  color: #15186E;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.sponserslider h3::before{
+  content: '';
+  position:relative;
+top: 40px;
+left: 65px;
+border-radius: 20px;
+  height: 5px;
+  width: 60px;
+
+  background-color: #50d8af;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.sponser-slider{
+    overflow: hidden;
+    padding: 60px 0 0 0;
+    white-space: wrap;
+    position: relative;
+}
+/* .sponser-slider:hover .sponser-slide-track{
+    animation-play-state: paused;
+} */
+
+/* .sponser-slider::before{
+    
+    background:linear-gradient(to right,rgba(255,255,255,0),red);
+    }
+.sponser-slider::after{
+
+background:linear-gradient(to left ,rgba(255,255,255,0),red);
+} */
+.sponser-slide-track{
+    display: inline-block;
+    display: flex;
+    animation: 20s slide infinite linear;
+}
+
+.sponser-slide-track img{
+    height: 150px;
+    width: 200px;
+    margin: 0 90px;
+}
+
+
+
+
+
+h6,h3{
+    font-weight: 600;
+  }
+  p{
+    font-weight: 400;
+    margin: 0;
+  }
+  .widgets a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+  }
+  .widgets ul{
+    padding: 0;
+  }
+  .widgets ul li{
+    list-style-type: none;
+    margin-bottom: 1em;
+   
+  }
+  .widgets .col-w2 ul img{
+    width: 1em;
+    margin: 0.2em;
+    margin-bottom: 0;
+    margin-right: 1em;
+  }
+  .widgets .col-w2 ul li{
+     display: flex;
+  }
+  .col-title{
+    word-spacing: 0.2em;
+    margin-top: 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2em;
+    color: white;
+  }
+  
+  .subscript h6,.subscript p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+  }
+  .col-w1>p{
+    margin:  1.2em;
+    color: white;
+  }
+  .secondary >p{
+    text-align: center;
+    color: white;
+  
+  }
+  
+  
+  /* layouts */
+  footer{
+    padding-top: 0.955em;
+    font-size: 1rem;
+    background-image: url("img/college-background\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: center;
+    background-size: cover;
+  
+  }
+  .main{
+    padding: 0.7em;
+    background-image: url(img/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .secondary{
+    padding: 0.5em;
+    background-color: black;
+  }
+  .widgets{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2.9em;
+    margin-bottom: 0em;
+    display: flex;
+  }
+  .col{
+    padding: 1em;
+    margin-bottom: 1.5em;
+  }
+  .col-border{
+    border-right: 1px solid #ffffff;
+  }
+  .col-w1{
+    width: 30%;
+    
+  }
+  .col-w2{
+    width: 30%;
+    padding-top: 0.875em;
+    
+  }
+  .col-w3{
+    width: 20%;
+    padding-top: 0.875em;
+  }
+  .col-w3 ul li{
+    display: flex;
+    flex-direction: row;
+  }
+  .icon-list::before{
+      content: ">>";
+      padding-right: 0.6em;
+      color: white;
+  }
+  .social-logo{
+    display: flex;
+    justify-content: center;
+    padding-right: 0.8em;
+    margin-bottom: 1em;
+  }
+  .social-logo img{
+    padding-left: 0.5em;
+  }
+  .clg-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .logo-img{
+      min-width: 100px;
+      max-width: 150px;
+      width: 35%;
+      padding: 1em;
+      margin-left: 0.8em;
+  }
+  .subscript{
+    padding-left: 1.5em;
+    width: 45%;
+    border-left: 1px solid #ffffff;
+    margin-right: 1em;
+  }
+  
+  
+  @media screen and (max-width:1080px) {
+    .widgets{
+      flex-wrap:wrap;
+      width: 90%;
+      justify-content: center;
+    }
+    .col-title{
+      text-align: center;
+    }
+   
+    .col-w1{
+      width: 30%;
+      
+    }
+    .col-w2{
+      width: 30%;
+      
+    }
+    .col-w3{
+      width: 20%;
+    }
+  }
+  
+  @media screen and (max-width:840px) {
+    .widgets{
+      flex-wrap:wrap;
+      width: 100%;
+      justify-content: start;
+    }
+    .col{
+      padding: 0.5em;
+    }
+    .col-title{
+      text-align: start;
+    }
+   
+    .col-w1{
+      width: 30%;
+      padding-left: 0;
+    }
+    .col-w2{
+      width: 32%;
+      
+    }
+    .col-w3{
+      width: 18%;
+    }
+  }
+  
+  @media screen and (max-width:750px) {
+    .widgets{
+      flex-wrap:wrap;
+      width:100%;
+      justify-content: center;
+    }
+    .col{
+      padding: 0.5em;
+    }
+    .col-title{
+      text-align: start;
+    }
+   
+    .col-w1{
+      width: 50%;
+      
+    }
+    .col-w2{
+      width: 50%; 
+      border-right: none;
+    }
+    .col-w3{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width:500px) {
+    .widgets{
+      flex-wrap:wrap;
+      width: 100%;
+      justify-content: center;
+    }
+    .col-border{
+      border-bottom: 1px solid #ffffff;
+    }
+    .col{
+      padding: 0.5em;
+      border-right: none;
+    }
+    .col-title{
+      text-align: start;
+    }
+    .clg-logo{
+      justify-content: center;
+      margin-top: 2em;
+      padding-left: 0.5em;
+    }
+   .logo-img, .col>p{
+      padding-left: 0;
+      margin-left: 0.5em;
+    }
+    .col-w1{
+      width:80%;
+      padding-left: 0;
+      
+    }
+  
+    .col-w2{
+      width: 80%;
+      
+    }
+    .col-w3{
+      width: 80%;
+    }
+  }
+
+
+
+  /*==============================service cards===========================*/
+/* .servicecardheader{
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(169, 163, 155, 0.3);
+
+}
+.servicecardheader h1{
+  font-size: 30px;
+  margin-left: 50px;
+  padding-top: 30px;
+  font-weight: 700;
+}
+  .service-cards{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .ourservicecardscontainer{
+    min-height: 80vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicecards{
+    width: 250px;
+    height: 250px;
+    color: rgb(0, 0, 0); */
+    /* background-color: blue; */
+    /* margin: 1em;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5em;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    
+}
+.serviceicons{
+    width: 60px;
+    height: 60px;
+    background:#6a7ebf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.servicecards .serviceicons{
+    box-shadow: 0 0 10px rgb(42, 42, 42);
+}
+.serviceicons i{
+    font-size: 1.5em;
+    color: rgb(26, 31, 32);
+}
+.servicecards p{
+    margin: 0.5em 0;
+    font-size: 0.8em;
+    display: none;
+    opacity: 0;
+    transition: all 4s;
+    z-index: 1;
+}
+.servicecards:hover p{
+  font-size: 13px;
+    display: block;
+    opacity: 1;
+}
+.servicecards h4{
+   font-size: 18px;
+    margin-top: 0.5em;
+    z-index: 1;
+}
+
+.service-cards .servicecardheader {
+width: 100%;
+}
+
+.servicecards::before,.servicecards::after{
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    height: 40%; */
+    /* z-index: -1; */
+    /* border-radius: 21px;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: inset 8px 8px 35px #ffffff,
+                inset -8px -8px 35px #ffffff;
+    transition: all .4s ease-in-out;
+}
+
+.servicecards::before{
+    top: 0;
+}
+.servicecards:hover::before{
+    transform: translateY(-20px);
+}
+
+.servicecards::after{
+    bottom: 10px;
+    height: 60%;
+    border-radius: 0 0 15px 15px;
+}  */
+
+/*=================responsive================*/
+
+@media screen and (max-width: 600px){
+  .chancellor{
+ min-height:120vh;
+   width: 100%;
+  
+   
+
+}
+.maincardscontainer .cardsrow #cards-bottom {
+  margin-bottom: 20px;
+}
+
+.chancellorinfo{
+    margin-top: 50px;
+    min-height: 90%;
+    min-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.chancellorinfo img{
+  height: 200px;
+  width: 200px;
+  
+}
+
+
+.chancellorbio{
+    height: 90%;
+    max-width: 350px;
+   
+}
+.chancellorbio .typingwrapper h1{
+   
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.chancellorbio h4{
+   margin-top: 10px;
+    font-size: 18px;
+    color: rgb(133, 161, 21);
+    margin-bottom: 10px;
+}
+.chancellorbio p{
+    font-size: 14px;
+    text-wrap: balance;
+    overflow: hidden;
+}
+.chancellor{
+  
+  padding: 10px;
+  position: relative;
+}
+
+
+/*=======whyincub==========*/
+.whyincub{
+  min-height:100vh;
+  max-width: 80%;
+  border-top: 3px solid black;
+  
+}
+
+
+
+.whycontent h1{
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 900;
+  margin-top: 30px;
+
+}
+.whycontent p{
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.whyincub img{
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 220px;
+  width: 280px;
+  border-radius: 15px;
+ 
+}
+
+
+
+
+/*============================SOL-PROB========================*/
+
+
+
+.solprobmain{
+  min-height:150vh;
+ width: 100%;
+
+  flex-wrap: wrap;
+
+  margin-top: 50px;
+ 
+}
+.sol-prob{
+  height: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.solprob{
+  min-height: 60vh;
+  width: 100%;
+  margin-top: 30px;
+  padding: 40px;
+  
+ 
+}
+.solprob h2{
+  margin-bottom: 30px;
+  color: rgb(226, 186, 25);
+  font-weight: 700;
+}
+.solprob p{
+  padding: 0 20px 0 20px;
+  font-size: 13px;
+}
+.solprob button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  
+  background-color: rgb(151, 185, 78);
+  align-self: center;
+}
+
+
+
+
+/*=========services=========*/
+.our-seervices  h3{
+  width: 100%;
+  height: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicecardheader h1{
+margin-left: 2px;
+}
+
+/*============sponser===========*/
+.sponser-slider{
+  margin-top: 10px;
+  padding-top: 0;
+}
+.sponserslider{
+  min-height: 30vh;
+}
+.sponserslider h3{
+  font-size: 25px;
+width: 70%;
+margin-top: 50px;
+}
+
+.sponser-slide-track img{
+  height: 80px;
+  width: 80px;
+  margin: 0 25px;
+}
+
+
+
+/*=========slidingwindow============*/
+.sliderwindow{
+  
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.sliderwindow{
+  height:55vh;
+ 
+  width: 100%;
+}
+
+.banner1,.banner2,.banner3,.banner4{
+  height: 70vh;
+}
+
+.ban img{
+  height: 70vh;
+  width: 100vw;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.slidertext{
+  width: 250px;
+  top: 130px;
+  left: 50px; 
+}
+
+@keyframes textup{
+  10%{
+      transform: translateY(0px);
+  }
+  100%{
+      transform: translateY(100px);
+  }
+}
+
+
+.slidertext h2{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.slidertext h1{
+  margin-top: 1px;
+  font-size: 30px;
+}
+.slidertext p{
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.slidertext span{
+  background: red;
+  height: 2px;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  margin-top: 0;
+}
+
+}
+/*==========================laptop responsive===============*/
+@media screen and (max-width: 1250px){
+  .chancellor{   
+    height: 60vh;
+  margin-bottom: 0;
+}
+
+.chancellorinfo{
+    margin-top: 50px;
+
+    min-width: 75%;
+}
+.chancellorinfo img{
+    height: 310px;
+    width: 310px;
+    margin-right: 30px;
+}
+
+.chancellorbio{
+    height: 90%;
+    width: 500px;
+   
+}
+.chancellorbio h1{
+    font-weight: 900;
+    font-size: 35px;
+    color: rgb(36, 21, 101);
+    margin-bottom: 2px;
+}
+.chancellorbio h4{
+    font-weight: 900;
+    font-size: 17px;
+    color: rgb(133, 161, 21);
+    margin-bottom: 20px;
+}
+.chancellorbio p{
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+
+}
+
+@media screen and (max-width: 880px){
+ .chancellor{   
+    min-height: 80vh;
+
+}
+
+.chancellorinfo{
+    margin-top: 50px;
+
+    min-width: 85%;
+}
+.chancellorinfo img{
+    height: 200px;
+    width: 220px;
+    margin-right: 30px;
+}
+
+.chancellorbio{
+    height: 90%;
+    width: 500px;
+   
+}
+.chancellorbio h1{
+    font-weight: 900;
+    font-size: 35px;
+    color: rgb(36, 21, 101);
+    margin-bottom: 2px;
+}
+.chancellorbio h4{
+    font-weight: 900;
+    font-size: 17px;
+    color: rgb(133, 161, 21);
+    margin-bottom: 20px;
+}
+.chancellorbio p{
+    font-size: 15px;
+    margin-top: 50px;
+} 
+.whyincub img{
+  margin-top: 0;
+  height: 180px;
+  width: 240px;
+  border-radius: 15px;
+ 
+}
+
+@keyframes updown{
+  0%{
+      /* transform: translateY(0); */
+      transform: translateX(-100px);
+  }
+  50%{
+      transform: translateY(-30px);
+      
+  }
+  0%{
+      transform: translateY(0);
+  }
+}
+}
+/* #myBtn {
+  height: 60px;
+  display: block; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 999; 
+  border: none; 
+  outline: none; 
+  background-color: rgb(238, 238, 238); 
+  color: white;
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 20px;
+  font-size: 18px; 
+  box-shadow: 1px 1px 1px gray;
+  animation: scrollup 5s infinite;
+}
+@keyframes scrollup{
+  0%{
+      
+      transform: translateX(-100px);
+  }
+  50%{
+      transform: translateY(-50px);
+      
+  }
+  0%{
+      transform: translateY(0);
+  }
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+#myBtn .scroll-up-img{
+  max-height: 20px;
+  width: 20px;
+ 
+}
+
+.screenloader{
+  z-index: 99999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.screenloader-hidden{
+  z-index: 99999999999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.screenloader::after{
+ 
+  content: '';
+  height: 65px;
+  width: 65px;
+ border: 9px solid rgb(125, 122, 122);
+  border-top-color: rgb(6, 6, 137);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading{
+  from{
+    transform: rotate(0turn);
+  }
+  to{
+    transform: rotate(1turn);
+  }
+} */
+
